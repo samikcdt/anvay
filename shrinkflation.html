@@ -1,385 +1,574 @@
 <!DOCTYPE html>
 <html lang="en" data-bs-theme="light">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>Project</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <!-- CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      media="screen"
+      href="/anvay/css/main.css"
+    />
+    <!-- End -->
 
-    <head>
-        <meta charset='utf-8'>
-        <meta http-equiv='X-UA-Compatible' content='IE=edge'>
-        <title>Project</title>
-        <meta name='viewport' content='width=device-width, initial-scale=1'>
-        <!-- CSS -->
-        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
-        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
-        <link rel='stylesheet' type='text/css' media='screen' href='/css/main.css'>
-        <!-- End -->
+    <!-- font awesome 6.4.0 icons -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <!-- / -->
 
-        <!-- font awesome 6.4.0 icons -->
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-        <!-- / -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Poppins:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
 
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
-    </head>
+  <body>
+    <!-- Header Section -->
+    <header>
+      <div class="container">
+        <nav class="navbar navbar-expand-lg">
+          <div class="container-fluid">
+            <a class="navbar-brand" href="/"
+              ><span><i class="fa-solid fa-austral-sign"></i></span>nvay</a
+            >
+            <button
+              class="navbar-toggler navbar-dark"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#navbarNav"
+              aria-controls="navbarNav"
+              aria-expanded="false"
+              aria-label="Toggle navigation"
+            >
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+              <ul class="navbar-nav">
+                <li class="nav-item">
+                  <a class="nav-link" aria-current="page" href="/">Home</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="/ocw.html">OCW</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="/cropdata.html">CropData</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="/compassion-club.html"
+                    >Compassion Club</a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link active" href="/shrinkflation.html"
+                    >Shrinkflation</a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="/1m1b.html">1M1B</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="/interviews.html">Interview</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="/holy-paws.html">Holy Paws</a>
+                </li>
 
-    <body>
-        <!-- Header Section -->
-        <header>
-            <div class="container">
-                <nav class="navbar navbar-expand-lg">
-                    <div class="container-fluid">
-                        <a class="navbar-brand" href="/"><span><i class="fa-solid fa-austral-sign"></i></span>nvay</a>
-                        <button class="navbar-toggler navbar-dark" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                            <span class="navbar-toggler-icon"></span>
-                        </button>
-                        <div class="collapse navbar-collapse" id="navbarNav">
-                            <ul class="navbar-nav">
-                                <li class="nav-item">
-                                    <a class="nav-link" aria-current="page" href="/">Home</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="nav-link" href="/ocw.html">OCW</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="nav-link" href="/cropdata.html">CropData</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="nav-link" href="/compassion-club.html">Compassion Club</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="nav-link active" href="/shrinkflation.html">Shrinkflation</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="nav-link" href="/1m1b.html">1M1B</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="nav-link" href="/interviews.html">Interview</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="nav-link" href="/holy-paws.html">Holy Paws</a>
-                                </li>
-
-                                <li class="nav-item">
-                                    <a class="nav-link" href="/about.html">Resume</a>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-                </nav>
+                <li class="nav-item">
+                  <a class="nav-link" href="/about.html">Resume</a>
+                </li>
+              </ul>
             </div>
-        </header>
-        <!-- End -->
+          </div>
+        </nav>
+      </div>
+    </header>
+    <!-- End -->
 
-        <section class="banner-section">
-            <img src="/images/shrinkflation-banner.jpg" class="img-fluid" />
-        </section>
+    <section class="banner-section">
+      <img src="/anvay/images/shrinkflation-banner.jpg" class="img-fluid" />
+    </section>
 
-        <section class="section-space">
-            <div class="container">
-                <div class="row align-items-center">
-                    <div class="col-12 col-lg-auto mb-lg-0 mb-3">
-                        <img src="/images/shrinkflation.png" class="img-fluid border rounded-4 shadow">
-                    </div>
-                    <div class="col-12 col-lg">
-                        <h3 class="section-title">Shrinkflation : Understanding Product Downsizing</h3>
-                        <div class="desc">
-                            <h4 class="mb-3">Abstract</h4>
-                            <p>In today's world of tight budgets and economic ups and downs, "shrinkflation" is a hot topic.
-                                It's all about how businesses make products smaller but don't lower the price. They do this to
-                                keep their profits up when making things costs more. This paper looks into shrinkflation, how
-                                it's been used for a long time, and what it means for consumers. We'll also see how,
-                                strangely, shrinkflation can sometimes help consumers. We'll look at how shrinkflation and a
-                                thing called the Consumer Price Index (CPI) are connected. So, let's dive into this sneaky
-                                economic trick.</p>
-                        </div>
-                    </div>
-                </div>
+    <section class="section-space">
+      <div class="container">
+        <div class="row align-items-center">
+          <div class="col-12 col-lg-auto mb-lg-0 mb-3">
+            <img
+              src="/anvay/images/shrinkflation.png"
+              class="img-fluid border rounded-4 shadow"
+            />
+          </div>
+          <div class="col-12 col-lg">
+            <h3 class="section-title">
+              Shrinkflation : Understanding Product Downsizing
+            </h3>
+            <div class="desc">
+              <h4 class="mb-3">Abstract</h4>
+              <p>
+                In today's world of tight budgets and economic ups and downs,
+                "shrinkflation" is a hot topic. It's all about how businesses
+                make products smaller but don't lower the price. They do this to
+                keep their profits up when making things costs more. This paper
+                looks into shrinkflation, how it's been used for a long time,
+                and what it means for consumers. We'll also see how, strangely,
+                shrinkflation can sometimes help consumers. We'll look at how
+                shrinkflation and a thing called the Consumer Price Index (CPI)
+                are connected. So, let's dive into this sneaky economic trick.
+              </p>
             </div>
-        </section>
+          </div>
+        </div>
+      </div>
+    </section>
 
+    <section class="section-space alt-section">
+      <div class="container">
+        <ol>
+          <li>
+            <strong>Introduction</strong>
+            <ol>
+              <li>
+                <strong>What's Shrinkflation?</strong>
+                <p>
+                  Shrinkflation is when companies make a product smaller but
+                  keep the price the same or just raise it a little. They do
+                  this to handle rising production costs and make sure they
+                  still make money. For instance, a chocolate bar that was 100
+                  grams might now be 90 grams but costs the same. These tiny
+                  changes can add up for consumers and the economy.
+                </p>
+              </li>
 
-        <section class="section-space alt-section">
-            <div class="container">
+              <li>
+                <strong>How Did Shrinkflation Start?</strong>
+                <p>
+                  Nobody can point to exactly where shrinkflation began. It's a
+                  term that popped up as consumers noticed products getting
+                  smaller. Companies have been using this strategy for a long
+                  time, but it's become more popular as they try to deal with
+                  economic challenges. Consumers have gotten used to it, which
+                  makes it a good choice for companies who want to manage costs
+                  secretly.
+                </p>
+              </li>
+
+              <li>
+                <strong>Why Is It Happening More?</strong>
+                <p>
+                  The rise of shrinkflation has to do with a bunch of money
+                  factors. Stuff like higher costs for materials, energy,
+                  workers, and getting things from one place to another has made
+                  companies reduce the amount of stuff you get in a product.
+                  Inflation, which is when things get more expensive, and
+                  problems in the supply chain are making it worse. Companies
+                  don't want to raise prices too much because consumers will
+                  stop buying, so they pick shrinkflation instead. It's even
+                  more common during times of high inflation.
+                </p>
+              </li>
+            </ol>
+          </li>
+
+          <li>
+            <strong>Main Body</strong>
+            <ol>
+              <li>
+                <strong>How Shrinkflation Works</strong>
+                <p>
+                  Shrinkflation isn't the same for everything. Companies use it
+                  differently for various products. They make things smaller,
+                  have less of it, or make it not as good. This happens with
+                  many things we buy, from food and drinks to stuff in our homes
+                  and electronics. The changes are so tiny that people might not
+                  notice them right away.
+                </p>
+
+                <p>
+                  Companies use shrinkflation when they need to save money. They
+                  cut back on the amount you get to keep the price the same.
+                  They do this so they can balance costs and keep customers
+                  happy.
+                </p>
+              </li>
+
+              <li>
+                <strong>The Money and Business Side</strong>
+                <p>
+                  Shrinkflation has to do with how things are bought and sold,
+                  and how the economy is doing.
+                </p>
+
+                <p>
+                  When things are good and the economy is strong, companies can
+                  charge more for their products. But when the economy isn't so
+                  great and it's costing more to make stuff, they can't just
+                  jack up prices. People won't buy things if they're too
+                  expensive. That's when shrinkflation comes into play. It helps
+                  companies keep making money even when costs are going up.
+                </p>
+              </li>
+
+              <li>
+                <strong>Why It Can Be Good for You</strong>
+                <p>
+                  You might think shrinkflation is all bad, but there are times
+                  when it's good for consumers. Companies do it to avoid raising
+                  prices. This means you might get less of something, but it
+                  won't cost you more. You still get the same product at the
+                  same price you're used to. When the other choice is a big
+                  price hike, shrinkflation can be better for your wallet.
+                </p>
+              </li>
+
+              <li>
+                <strong>How Your Brain Plays a Part</strong>
+                <p>
+                  Shrinkflation has a lot to do with how people think. In many
+                  cases, you won't notice a small change in the size of a
+                  product. That's because shrinkflation is sneaky. Small
+                  reductions in size or quantity might not catch your eye until
+                  you look closely at the packaging.
+                </p>
+
+                <p>
+                  People are more concerned about how much things cost rather
+                  than how big or small they are. That's why they're more likely
+                  to spot price increases than changes in product size. What's
+                  going on in your head has a big role in why shrinkflation
+                  works.
+                </p>
+              </li>
+
+              <li>
+                <strong>Where You See Shrinkflation</strong>
+                <p>
+                  Shrinkflation isn't limited to just one type of product. It
+                  happens in a bunch of industries. Food and drinks are big
+                  targets for shrinkflation, especially when the cost of
+                  materials goes up. Household items like cleaning stuff and
+                  paper goods get smaller too. Electronics makers sometimes
+                  reduce quality while keeping prices steady. It's not
+                  everywhere, but shrinkflation happens in a lot of places.
+                </p>
+              </li>
+
+              <li>
+                <strong>What Others Say</strong>
+                <p>
+                  To understand shrinkflation better, we need to look at what
+                  experts and research say. They've studied how people react to
+                  shrinkflation, how it impacts the economy, and what it does to
+                  things like the CPI.
+                </p>
                 <ol>
-                    <li><strong>Introduction</strong>
-                        <ol>
-                            <li>
-                                <strong>What's Shrinkflation?</strong>
-                                <p>Shrinkflation is when companies make a product smaller but keep the price the same or just
-                                    raise it a little. They do this to handle rising production costs and make sure they still make
-                                    money. For instance, a chocolate bar that was 100 grams might now be 90 grams but costs
-                                    the same. These tiny changes can add up for consumers and the economy.</p>
-                            </li>
-
-                            <li>
-                                <strong>How Did Shrinkflation Start?</strong>
-                                <p>Nobody can point to exactly where shrinkflation began. It's a term that popped up as
-                                    consumers noticed products getting smaller. Companies have been using this strategy for a
-                                    long time, but it's become more popular as they try to deal with economic challenges.
-                                    Consumers have gotten used to it, which makes it a good choice for companies who want to
-                                    manage costs secretly.</p>
-                            </li>
-
-                            <li>
-                                <strong>Why Is It Happening More?</strong>
-                                <p>The rise of shrinkflation has to do with a bunch of money factors. Stuff like higher costs for
-                                    materials, energy, workers, and getting things from one place to another has made
-                                    companies reduce the amount of stuff you get in a product. Inflation, which is when things
-                                    get more expensive, and problems in the supply chain are making it worse. Companies don't
-                                    want to raise prices too much because consumers will stop buying, so they pick shrinkflation
-                                    instead. It's even more common during times of high inflation.</p>
-                            </li>
-                        </ol>
-                    </li>
-
-                    <li><strong>Main Body</strong>
-                        <ol>
-                            <li>
-                                <strong>How Shrinkflation Works</strong>
-                                <p>Shrinkflation isn't the same for everything. Companies use it differently for various products.
-                                    They make things smaller, have less of it, or make it not as good. This happens with many
-                                    things we buy, from food and drinks to stuff in our homes and electronics. The changes are
-                                    so tiny that people might not notice them right away.</p>
-
-                                <p>Companies use shrinkflation when they need to save money. They cut back on the amount
-                                    you get to keep the price the same. They do this so they can balance costs and keep
-                                    customers happy.</p>
-                            </li>
-
-                            <li>
-                                <strong>The Money and Business Side</strong>
-                                <p>Shrinkflation has to do with how things are bought and sold, and how the economy is doing.</p>
-
-                                <p>When things are good and the economy is strong, companies can charge more for their
-                                    products. But when the economy isn't so great and it's costing more to make stuff, they can't just jack up prices. People won't buy things if they're too expensive. That's when shrinkflation
-                                    comes into play. It helps companies keep making money even when costs are going up.</p>
-                            </li>
-
-                            <li>
-                                <strong>Why It Can Be Good for You</strong>
-                                <p>You might think shrinkflation is all bad, but there are times when it's good for consumers.
-                                    Companies do it to avoid raising prices. This means you might get less of something, but it
-                                    won't cost you more. You still get the same product at the same price you're used to. When
-                                    the other choice is a big price hike, shrinkflation can be better for your wallet.</p>
-                            </li>
-
-                            <li>
-                                <strong>How Your Brain Plays a Part</strong>
-                                <p>Shrinkflation has a lot to do with how people think. In many cases, you won't notice a small
-                                    change in the size of a product. That's because shrinkflation is sneaky. Small reductions in
-                                    size or quantity might not catch your eye until you look closely at the packaging.</p>
-
-                                <p>People are more concerned about how much things cost rather than how big or small they
-                                    are. That's why they're more likely to spot price increases than changes in product size.
-                                    What's going on in your head has a big role in why shrinkflation works.</p>
-                            </li>
-
-                            <li>
-                                <strong>Where You See Shrinkflation</strong>
-                                <p>Shrinkflation isn't limited to just one type of product. It happens in a bunch of industries.
-                                    Food and drinks are big targets for shrinkflation, especially when the cost of materials goes
-                                    up. Household items like cleaning stuff and paper goods get smaller too. Electronics makers
-                                    sometimes reduce quality while keeping prices steady. It's not everywhere, but shrinkflation
-                                    happens in a lot of places.</p>
-                            </li>
-
-                            <li>
-                                <strong>What Others Say</strong>
-                                <p>To understand shrinkflation better, we need to look at what experts and research say.
-                                    They've studied how people react to shrinkflation, how it impacts the economy, and what it
-                                    does to things like the CPI.</p>
-                                <ol>
-                                    <li>
-                                        <strong>What the Experts Say</strong>
-                                        <p>Experts have looked at shrinkflation from all angles. They study how people act, what it does
-                                            to the economy, and how it shows up in things like the CPI. They found that most people
-                                            don't notice small changes in the size of a product. They care more about the price going up.
-                                            This sneaky nature helps companies keep making money without upsetting customers.</p>
-                                    </li>
-                                    <li>
-                                        <strong>Reports from the Field</strong>
-                                        <p>Reports about shrinkflation look at how common it is in different industries, especially in food
-                                            and drinks. They talk about why companies use shrinkflation, like the cost of making things
-                                            and how much other companies charge. Learning about the challenges in each industry
-                                            helps us understand why shrinkflation is happening.</p>
-                                    </li>
-                                    <li>
-                                        <strong>Expert Opinions</strong>
-                                        <p>Economists, consumer behavior pros, and business experts give their take on shrinkflation.
-                                            They talk about how hard it is for companies to keep profits up while keeping customers
-                                            happy. The way people think about products and prices is a big deal too.</p>
-                                    </li>
-                                </ol>
-                            </li>
-                        </ol>
-                    </li>
-                    <li>
-                        <strong>The Connection Between Shrinkflation and the Consumer Price Index (CPI)</strong>
-                        <ol>
-                            <li>
-                                <strong>What's the CPI?</strong>
-                                <p>The Consumer Price Index (CPI) is a big deal in economics. It's a way to see how the cost of
-                                    living is changing over time. The CPI looks at how much we're paying for things like food,
-                                    clothes, housing, and getting around. It's important for a few reasons.</p>
-
-                                <p>First, it helps people, companies, and policymakers know how the cost of living is going up.
-                                    This helps them plan their money, budgets, and what they need to do.</p>
-
-                                <p>Second, big banks, like the Federal Reserve, use the CPI to make money decisions. If things
-                                    cost too much, they might raise interest rates to keep it in check. On the other hand, they
-                                    could lower rates to make people spend more if costs aren't going up enough.</p>
-
-                                <p>Lastly, lots of stuff, like government programs, jobs, and retirement plans, are connected to
-                                    the CPI. This makes sure payments and wages keep up with prices, so people can still buy
-                                    what they need.</p>
-                            </li>
-
-                            <li>
-                                <strong>Shrinkflation and the CPI</strong>
-                                <p>Shrinkflation and the Consumer Price Index (CPI) are linked because they both deal with the
-                                    price and size of things people buy. Shrinkflation is when companies make products smaller
-                                    but don't change the price. This means you're paying more for less stuff. It's a way for
-                                    companies to push up costs to customers without raising prices outright.</p>
-
-                                <p>The CPI, on the other hand, is an economic tool that looks at how the prices of a fixed set of
-                                    goods and services change over time. It's all about measuring inflation, or how much prices
-                                    are going up. It looks at how much those goods in the basket are costing. So when
-                                    companies use shrinkflation, the cost of the stuff you buy goes up even if the price isn't
-                                    changing. This messes with the CPI because it makes it look like things are getting more
-                                    expensive than they are. That's why we need smart folks to adjust the CPI to show the real
-                                    inflation rate.</p>
-                            </li>
-
-                            <li>
-                                <strong>Fixing the CPI</strong>
-                                <p>To make sure the CPI tells the truth about inflation, economists make some changes. They
-                                    check products for size changes and report what they find. Then, they figure out the price for
-                                    a standard amount, like an ounce or a pound, to account for the size changes. This helps the
-                                    CPI show the right price changes for consumers.</p>
-                            </li>
-
-                            <li>
-                                <strong>How Much It Matters</strong>
-                                <p>Shrinkflation might not seem like a big deal when it happens to one product, but it doesn't do
-                                    much to the overall inflation rate. It's like a tiny speck on the whole inflation picture. In fact,
-                                    shrinkflation has about a 0.01% impact on the Consumer Price Index (CPI) every year. So,
-                                    while you might spot it in a product here and there, it doesn't shake up the whole economy.</p>
-                            </li>
-                        </ol>
-                    </li>
-                    <li>
-                        <strong>Conclusion</strong>
-                        <p>Shrinkflation is a sneaky trick that businesses use to deal with rising costs. You might feel
-                            the pinch when your favorite stuff gets smaller, but it's better than paying way more for it.
-                            Shrinkflation is about finding a balance between making money and keeping customers
-                            happy.</p>
-
-                        <p>The small changes in product size can be hard to spot, but they're all part of the game. Your
-                            focus is usually on how much things cost rather than how much you're getting. That's why
-                            companies can pull off shrinkflation.</p>
-
-                        <p>The practice of shrinkflation messes with the Consumer Price Index (CPI), which is important
-                            in the world of money. The CPI helps us understand how much we need for everyday things.
-                            When shrinkflation makes stuff more expensive, it makes the CPI look like prices are
-                            shooting up. But smart folks are on the case, making sure the CPI tells us the real story.</p>
-
-                        <p>In the end, shrinkflation is a unique way that businesses cope with financial ups and downs
-                            while still delivering products to you. As we move through this complicated world of money
-                            and business, shrinkflation keeps things interesting for researchers, economists, and
-                            everyone who's out there shopping.</p>
-
-                        <strong>Consumer Awareness and Challenges</strong>
-
-                        <ol>
-                            <li>
-                                <strong>The Growing Awareness</strong>
-                                <p>People are catching on to shrinkflation more and more. This is thanks to news, consumer
-                                    groups, and social media. People pay more attention to what they're buying, looking at
-                                    product sizes and comparing them to before. Companies using shrinkflation are feeling the
-                                    heat and have to be more honest.</p>
-
-                                <p>Groups that watch out for consumers and speak up are making a difference. They look into
-                                    shrinkflation and share what they find. The idea is to make sure you know what you're
-                                    getting when you buy something. This change in awareness is part of a bigger trend where
-                                    people want businesses to be fair and open.</p>
-                            </li>
-
-                            <li>
-                                <strong>Spotting Shrinkflation Isn't Easy</strong>
-                                <p>Even though people know more about shrinkflation, it's not always easy to find. The practice
-                                    is clever and sometimes you won't notice size changes. The way products are packed also
-                                    matters. If a product has a new look, you might not realize it's smaller until you really look.</p>
-
-                                <p>Plus, you might not have old product info to compare. This makes it hard to see when things
-                                    are getting smaller, especially when the price is staying the same.</p>
-
-                                <p>The sneaky nature of shrinkflation and how hard it is to spot is a challenge for you as a
-                                    shopper.</p>
-                            </li>
-
-                            <li>
-                                <strong>Rules and Protection</strong>
-                                <p>The rise in awareness means that governments and groups that protect consumers are
-                                    taking action. They want to make sure people know when products change. That could
-                                    mean clearer labels on products or rules that say how much a product can get smaller.
-                                    These rules help make sure you know what's happening with the stuff you buy.</p>
-
-                                <p>Agencies that look out for consumers are also keeping an eye on shrinkflation. They make
-                                    sure companies are being fair and telling the truth.</p>
-
-                                <p>What's happening with consumer awareness, rules, and business practices all show how
-                                    things are changing.</p>
-                            </li>
-                        </ol>
-                    </li>
-                    <li>
-                        <strong>Future Implications</strong>
-                        <p>Shrinkflation is here to stay, but how it works will depend on what people think, the rules in
-                            place, and how the economy is doing.</p>
-
-                        <p>As people catch on more, companies may start telling you about size changes, like why they
-                            had to do it because of inflation or other costs. They might even add extra stuff to make up
-                            for what they've taken away.</p>
-
-                        <p>On the rule side, governments and consumer agencies will keep working to make sure you
-                            know about product changes. They'll make sure the labels are clear and products stay fair.</p>
-
-                        <p>From an economic point of view, shrinkflation will stick around during tough times when
-                            costs are up. It's a way for companies to make money while keeping prices steady. As the
-                            economy goes up and down, you'll see more or less shrinkflation.</p>
-
-                        <p>In short, the future of shrinkflation will be a mix of what people think, rules, and how the
-                            economy is doing. It shows how businesses and consumers adapt to the modern world of
-                            money. Shrinkflation might be a small part of our shopping world, but it keeps things
-                            interesting.</p>
-                    </li>
+                  <li>
+                    <strong>What the Experts Say</strong>
+                    <p>
+                      Experts have looked at shrinkflation from all angles. They
+                      study how people act, what it does to the economy, and how
+                      it shows up in things like the CPI. They found that most
+                      people don't notice small changes in the size of a
+                      product. They care more about the price going up. This
+                      sneaky nature helps companies keep making money without
+                      upsetting customers.
+                    </p>
+                  </li>
+                  <li>
+                    <strong>Reports from the Field</strong>
+                    <p>
+                      Reports about shrinkflation look at how common it is in
+                      different industries, especially in food and drinks. They
+                      talk about why companies use shrinkflation, like the cost
+                      of making things and how much other companies charge.
+                      Learning about the challenges in each industry helps us
+                      understand why shrinkflation is happening.
+                    </p>
+                  </li>
+                  <li>
+                    <strong>Expert Opinions</strong>
+                    <p>
+                      Economists, consumer behavior pros, and business experts
+                      give their take on shrinkflation. They talk about how hard
+                      it is for companies to keep profits up while keeping
+                      customers happy. The way people think about products and
+                      prices is a big deal too.
+                    </p>
+                  </li>
                 </ol>
-            </div>
-        </section>
+              </li>
+            </ol>
+          </li>
+          <li>
+            <strong
+              >The Connection Between Shrinkflation and the Consumer Price Index
+              (CPI)</strong
+            >
+            <ol>
+              <li>
+                <strong>What's the CPI?</strong>
+                <p>
+                  The Consumer Price Index (CPI) is a big deal in economics.
+                  It's a way to see how the cost of living is changing over
+                  time. The CPI looks at how much we're paying for things like
+                  food, clothes, housing, and getting around. It's important for
+                  a few reasons.
+                </p>
 
-        <footer>
-            <div class="container contact-links">
-                <div class="row">
-                    <div class="col">
-                        <a href="tel:+918806775000">
-                            <i class="bi bi-telephone-fill"></i>
-                            <span>+91 88067 75000</span>
-                        </a>
-                    </div>
+                <p>
+                  First, it helps people, companies, and policymakers know how
+                  the cost of living is going up. This helps them plan their
+                  money, budgets, and what they need to do.
+                </p>
 
-                    <div class="col-auto">
-                        <a href="mailto:surianvay@gmail.com">
-                            <i class="bi bi-envelope-at-fill"></i>
-                            <span>surianvay@gmail.com</span>
-                        </a>
-                    </div>
-                </div>
-            </div>
-        </footer>
+                <p>
+                  Second, big banks, like the Federal Reserve, use the CPI to
+                  make money decisions. If things cost too much, they might
+                  raise interest rates to keep it in check. On the other hand,
+                  they could lower rates to make people spend more if costs
+                  aren't going up enough.
+                </p>
 
-        <!-- Scripts -->
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
-        <script src='/js/main.js'></script>
-        <!-- End -->
-    </body>
+                <p>
+                  Lastly, lots of stuff, like government programs, jobs, and
+                  retirement plans, are connected to the CPI. This makes sure
+                  payments and wages keep up with prices, so people can still
+                  buy what they need.
+                </p>
+              </li>
 
+              <li>
+                <strong>Shrinkflation and the CPI</strong>
+                <p>
+                  Shrinkflation and the Consumer Price Index (CPI) are linked
+                  because they both deal with the price and size of things
+                  people buy. Shrinkflation is when companies make products
+                  smaller but don't change the price. This means you're paying
+                  more for less stuff. It's a way for companies to push up costs
+                  to customers without raising prices outright.
+                </p>
+
+                <p>
+                  The CPI, on the other hand, is an economic tool that looks at
+                  how the prices of a fixed set of goods and services change
+                  over time. It's all about measuring inflation, or how much
+                  prices are going up. It looks at how much those goods in the
+                  basket are costing. So when companies use shrinkflation, the
+                  cost of the stuff you buy goes up even if the price isn't
+                  changing. This messes with the CPI because it makes it look
+                  like things are getting more expensive than they are. That's
+                  why we need smart folks to adjust the CPI to show the real
+                  inflation rate.
+                </p>
+              </li>
+
+              <li>
+                <strong>Fixing the CPI</strong>
+                <p>
+                  To make sure the CPI tells the truth about inflation,
+                  economists make some changes. They check products for size
+                  changes and report what they find. Then, they figure out the
+                  price for a standard amount, like an ounce or a pound, to
+                  account for the size changes. This helps the CPI show the
+                  right price changes for consumers.
+                </p>
+              </li>
+
+              <li>
+                <strong>How Much It Matters</strong>
+                <p>
+                  Shrinkflation might not seem like a big deal when it happens
+                  to one product, but it doesn't do much to the overall
+                  inflation rate. It's like a tiny speck on the whole inflation
+                  picture. In fact, shrinkflation has about a 0.01% impact on
+                  the Consumer Price Index (CPI) every year. So, while you might
+                  spot it in a product here and there, it doesn't shake up the
+                  whole economy.
+                </p>
+              </li>
+            </ol>
+          </li>
+          <li>
+            <strong>Conclusion</strong>
+            <p>
+              Shrinkflation is a sneaky trick that businesses use to deal with
+              rising costs. You might feel the pinch when your favorite stuff
+              gets smaller, but it's better than paying way more for it.
+              Shrinkflation is about finding a balance between making money and
+              keeping customers happy.
+            </p>
+
+            <p>
+              The small changes in product size can be hard to spot, but they're
+              all part of the game. Your focus is usually on how much things
+              cost rather than how much you're getting. That's why companies can
+              pull off shrinkflation.
+            </p>
+
+            <p>
+              The practice of shrinkflation messes with the Consumer Price Index
+              (CPI), which is important in the world of money. The CPI helps us
+              understand how much we need for everyday things. When
+              shrinkflation makes stuff more expensive, it makes the CPI look
+              like prices are shooting up. But smart folks are on the case,
+              making sure the CPI tells us the real story.
+            </p>
+
+            <p>
+              In the end, shrinkflation is a unique way that businesses cope
+              with financial ups and downs while still delivering products to
+              you. As we move through this complicated world of money and
+              business, shrinkflation keeps things interesting for researchers,
+              economists, and everyone who's out there shopping.
+            </p>
+
+            <strong>Consumer Awareness and Challenges</strong>
+
+            <ol>
+              <li>
+                <strong>The Growing Awareness</strong>
+                <p>
+                  People are catching on to shrinkflation more and more. This is
+                  thanks to news, consumer groups, and social media. People pay
+                  more attention to what they're buying, looking at product
+                  sizes and comparing them to before. Companies using
+                  shrinkflation are feeling the heat and have to be more honest.
+                </p>
+
+                <p>
+                  Groups that watch out for consumers and speak up are making a
+                  difference. They look into shrinkflation and share what they
+                  find. The idea is to make sure you know what you're getting
+                  when you buy something. This change in awareness is part of a
+                  bigger trend where people want businesses to be fair and open.
+                </p>
+              </li>
+
+              <li>
+                <strong>Spotting Shrinkflation Isn't Easy</strong>
+                <p>
+                  Even though people know more about shrinkflation, it's not
+                  always easy to find. The practice is clever and sometimes you
+                  won't notice size changes. The way products are packed also
+                  matters. If a product has a new look, you might not realize
+                  it's smaller until you really look.
+                </p>
+
+                <p>
+                  Plus, you might not have old product info to compare. This
+                  makes it hard to see when things are getting smaller,
+                  especially when the price is staying the same.
+                </p>
+
+                <p>
+                  The sneaky nature of shrinkflation and how hard it is to spot
+                  is a challenge for you as a shopper.
+                </p>
+              </li>
+
+              <li>
+                <strong>Rules and Protection</strong>
+                <p>
+                  The rise in awareness means that governments and groups that
+                  protect consumers are taking action. They want to make sure
+                  people know when products change. That could mean clearer
+                  labels on products or rules that say how much a product can
+                  get smaller. These rules help make sure you know what's
+                  happening with the stuff you buy.
+                </p>
+
+                <p>
+                  Agencies that look out for consumers are also keeping an eye
+                  on shrinkflation. They make sure companies are being fair and
+                  telling the truth.
+                </p>
+
+                <p>
+                  What's happening with consumer awareness, rules, and business
+                  practices all show how things are changing.
+                </p>
+              </li>
+            </ol>
+          </li>
+          <li>
+            <strong>Future Implications</strong>
+            <p>
+              Shrinkflation is here to stay, but how it works will depend on
+              what people think, the rules in place, and how the economy is
+              doing.
+            </p>
+
+            <p>
+              As people catch on more, companies may start telling you about
+              size changes, like why they had to do it because of inflation or
+              other costs. They might even add extra stuff to make up for what
+              they've taken away.
+            </p>
+
+            <p>
+              On the rule side, governments and consumer agencies will keep
+              working to make sure you know about product changes. They'll make
+              sure the labels are clear and products stay fair.
+            </p>
+
+            <p>
+              From an economic point of view, shrinkflation will stick around
+              during tough times when costs are up. It's a way for companies to
+              make money while keeping prices steady. As the economy goes up and
+              down, you'll see more or less shrinkflation.
+            </p>
+
+            <p>
+              In short, the future of shrinkflation will be a mix of what people
+              think, rules, and how the economy is doing. It shows how
+              businesses and consumers adapt to the modern world of money.
+              Shrinkflation might be a small part of our shopping world, but it
+              keeps things interesting.
+            </p>
+          </li>
+        </ol>
+      </div>
+    </section>
+
+    <footer>
+      <div class="container contact-links">
+        <div class="row">
+          <div class="col">
+            <a href="tel:+918806775000">
+              <i class="bi bi-telephone-fill"></i>
+              <span>+91 88067 75000</span>
+            </a>
+          </div>
+
+          <div class="col-auto">
+            <a href="mailto:surianvay@gmail.com">
+              <i class="bi bi-envelope-at-fill"></i>
+              <span>surianvay@gmail.com</span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="/anvay/js/main.js"></script>
+    <!-- End -->
+  </body>
 </html>
