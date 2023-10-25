@@ -19113,6 +19113,9 @@ header .navbar .navbar-nav .nav-link.active, header .navbar .navbar-nav .nav-lin
   margin-bottom: 25px;
   font-weight: 700;
 }
+.section-space .subtitle {
+  color: rgba(var(--bs-link-color-rgb), 0.7);
+}
 .section-space .desc {
   line-height: 150%;
   margin: 0 auto;
@@ -19207,7 +19210,7 @@ footer {
 .card.project-card .card-text {
   margin-bottom: 0;
   text-align: center;
-  padding: 12px;
+  padding: 12px 12px 0;
   font-size: 1.2rem;
   font-weight: 500;
   color: var(--bs-primary);
@@ -19294,7 +19297,7 @@ ol li ol li::before {
   counter-increment: subsection;
   content: counter(section) "." counter(subsection) " ";
   width: 25px;
-  margin-left: -20px;
+  margin-left: -29px;
 }
 ol li ol li ol {
   counter-reset: subsubsection;
@@ -19342,16 +19345,27 @@ ol li ol li ol li::before {
     height: 255px;
   }
   .contact-links a {
-    font-size: 1rem;
+    font-size: 0.875rem;
   }
   .contact-links a i {
-    font-size: 1.2rem;
+    font-size: 0.875rem;
   }
   p,
   ul li,
   ol li {
     font-size: 0.875rem;
     line-height: normal;
+  }
+  body .section-space {
+    padding-block: 30px;
+  }
+  body .section-space .section-title {
+    margin-bottom: 10px;
+    font-size: 18px;
+  }
+  body .section-space .subtitle {
+    font-size: 0.75rem;
+    margin-bottom: 10px !important;
   }
   body .section-space img {
     width: auto;
@@ -19361,6 +19375,34 @@ ol li ol li ol li::before {
     float: initial !important;
     margin-block: inherit !important;
     margin-inline: inherit !important;
-    margin: 0 auto 15px !important;
+    margin: 0 0 15px !important;
+    --bs-border-radius-xl: 0.5rem;
+  }
+  body .card.project-card .card-text {
+    font-size: 0.875rem;
+  }
+  body h4, body .h4,
+  body h5,
+  body .h5,
+  body h3,
+  body .h3 {
+    font-size: 1rem;
+  }
+  body p,
+  body ul li,
+  body ol li {
+    font-size: 0.75rem;
+  }
+  body ul:not(.navbar-nav):not(.dropdown-menu) > li::before {
+    top: 5px;
+  }
+  body .btn-primary {
+    --bs-btn-padding-x: 0.75rem;
+    --bs-btn-padding-y: 0.3125rem;
+    --bs-btn-font-size: 0.75rem;
+    --bs-btn-font-weight: 500;
+  }
+  body .desc {
+    width: 100% !important;
   }
 }/*# sourceMappingURL=custom.css.map */

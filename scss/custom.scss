@@ -189,6 +189,10 @@ header {
         font-weight: 700;
     }
 
+    .subtitle {
+        color: rgba(var(--bs-link-color-rgb), 0.7);
+    }
+
     .desc {
         line-height: 150%;
         margin: 0 auto;
@@ -304,7 +308,7 @@ footer {
         .card-text {
             margin-bottom: 0;
             text-align: center;
-            padding: 12px;
+            padding: 12px 12px 0;
             font-size: 1.2rem;
             font-weight: 500;
             color: var(--bs-primary);
@@ -413,7 +417,7 @@ ol {
                     counter-increment: subsection;
                     content: counter(section) "." counter(subsection) " ";
                     width: 25px;
-                    margin-left: -20px;
+                    margin-left: -29px;
 
                 }
 
@@ -499,10 +503,11 @@ ol {
 
     .contact-links {
         a {
-            font-size: 1rem;
+            font-size: 0.875rem;
+
 
             i {
-                font-size: 1.2rem;
+                font-size: 0.875rem;
             }
 
         }
@@ -518,6 +523,18 @@ ol {
 
     body {
         .section-space {
+            padding-block: 30px;
+
+            .section-title {
+                margin-bottom: 10px;
+                font-size: 18px;
+            }
+
+            .subtitle {
+                font-size: 0.75rem;
+                margin-bottom: 10px !important;
+            }
+
             img {
                 width: auto;
                 max-width: 100%;
@@ -526,8 +543,53 @@ ol {
                 float: initial !important;
                 margin-block: inherit !important;
                 margin-inline: inherit !important;
-                margin: 0 auto 15px !important;
+                margin: 0 0 15px !important;
+                --bs-border-radius-xl: 0.5rem;
             }
+        }
+
+        .card {
+            &.project-card {
+                .card-text {
+                    font-size: 0.875rem;
+                }
+            }
+        }
+
+        h4,
+        h5,
+        h3 {
+            font-size: 1rem;
+        }
+
+
+        p,
+        ul li,
+        ol li {
+            font-size: 0.75rem;
+        }
+
+        ul {
+            &:not(.navbar-nav) {
+                &:not(.dropdown-menu) {
+                    >li {
+                        &::before {
+                            top: 5px;
+                        }
+                    }
+                }
+            }
+        }
+
+        .btn-primary {
+            --bs-btn-padding-x: 0.75rem;
+            --bs-btn-padding-y: 0.3125rem;
+            --bs-btn-font-size: 0.75rem;
+            --bs-btn-font-weight: 500;
+        }
+
+        .desc {
+            width: 100% !important;
         }
     }
 }
