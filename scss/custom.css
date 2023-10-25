@@ -19109,9 +19109,12 @@ header .navbar .navbar-nav .nav-link.active, header .navbar .navbar-nav .nav-lin
   padding-block: 60px;
 }
 .section-space .section-title {
-  color: var(--bs-primary);
+  color: var(--bs-link-color);
   margin-bottom: 25px;
   font-weight: 700;
+}
+.section-space h5.subtitle, .section-space .subtitle.h5 {
+  color: var(--bs-primary);
 }
 .section-space .subtitle {
   color: rgba(var(--bs-link-color-rgb), 0.7);
@@ -19121,7 +19124,7 @@ header .navbar .navbar-nav .nav-link.active, header .navbar .navbar-nav .nav-lin
   margin: 0 auto;
 }
 .section-space p strong {
-  color: var(--bs-primary);
+  color: var(--bs-link-color);
   font-weight: 600;
 }
 
@@ -19149,7 +19152,7 @@ footer {
   height: 50px;
   background-color: transparent;
   border: solid;
-  border-color: var(--bs-primary);
+  border-color: var(--bs-link-color);
   border-width: 4px 0 0 4px;
   left: 10px;
   top: 10px;
@@ -19164,7 +19167,7 @@ footer {
   height: 50px;
   background-color: transparent;
   border: solid;
-  border-color: var(--bs-primary);
+  border-color: var(--bs-link-color);
   border-width: 0 4px 4px 0;
   right: 10px;
   bottom: 10px;
@@ -19205,7 +19208,7 @@ footer {
 .card.project-card .card-icon:hover .img-container {
   transform: scale(0.9);
   box-shadow: 0px 11px 12px rgba(0, 0, 0, 0.13);
-  border-color: var(--bs-primary);
+  border-color: var(--bs-link-color);
 }
 .card.project-card .card-text {
   margin-bottom: 0;
@@ -19213,7 +19216,7 @@ footer {
   padding: 12px 12px 0;
   font-size: 1.2rem;
   font-weight: 500;
-  color: var(--bs-primary);
+  color: var(--bs-link-color);
   font-weight: 600;
 }
 
@@ -19237,7 +19240,7 @@ ul:not(.navbar-nav):not(.dropdown-menu) > li {
 ul:not(.navbar-nav):not(.dropdown-menu) > li::before {
   content: "";
   position: absolute;
-  background-color: var(--bs-primary);
+  background-color: var(--bs-link-color);
   width: 0.5rem;
   height: 0.5rem;
   left: 0;
@@ -19246,7 +19249,7 @@ ul:not(.navbar-nav):not(.dropdown-menu) > li::before {
   margin-left: -1rem;
 }
 ul:not(.navbar-nav):not(.dropdown-menu) > li strong {
-  color: var(--bs-primary);
+  color: var(--bs-link-color);
   font-weight: 600;
 }
 ul:not(.navbar-nav):not(.dropdown-menu) > li ul,
@@ -19268,7 +19271,7 @@ ol li {
   position: relative;
 }
 ol li strong {
-  color: var(--bs-primary);
+  color: var(--bs-link-color);
   font-weight: 600;
 }
 ol li ul,
@@ -19283,7 +19286,7 @@ ol li ol li {
 ol li::before {
   counter-increment: section;
   content: counter(section) ". ";
-  color: var(--bs-primary);
+  color: var(--bs-link-color);
   margin-left: -25px;
   background-color: transparent;
   font-weight: 600;
@@ -19338,11 +19341,14 @@ ol li ol li ol li::before {
 }
 @media only screen and (max-width: 576px) {
   .card.project-card {
-    max-width: 290px;
+    max-width: 182px;
   }
   .card.project-card .card-icon .img-container {
-    width: 255px;
-    height: 255px;
+    width: 149px;
+    height: 149px;
+  }
+  .card.project-card .card-icon .img-container img {
+    margin: 0 !important;
   }
   .contact-links a {
     font-size: 0.875rem;
