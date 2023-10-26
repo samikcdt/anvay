@@ -19114,7 +19114,7 @@ header .navbar .navbar-nav .nav-link.active, header .navbar .navbar-nav .nav-lin
   font-weight: 700;
 }
 .section-space h5.subtitle, .section-space .subtitle.h5 {
-  color: var(--bs-primary);
+  color: var(--bs-link-color);
 }
 .section-space .subtitle {
   color: rgba(var(--bs-link-color-rgb), 0.7);
