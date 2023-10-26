@@ -19094,16 +19094,14 @@ header .navbar .navbar-nav .nav-link.active, header .navbar .navbar-nav .nav-lin
   background-color: rgba(var(--bs-primary-rgb), 0.15);
   box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.27);
 }
+.banner-section img {
+  width: 100%;
+}
 .banner-section .banner-img {
   min-height: 300px;
 }
 .banner-section .carousel-caption {
   color: var(--bs-white);
-}
-
-.alt-section {
-  border-top: solid 2px rgba(var(--bs-primary-rgb), 0.5);
-  border-bottom: solid 2px rgba(var(--bs-primary-rgb), 0.5);
 }
 
 .section-space {
@@ -19128,6 +19126,10 @@ header .navbar .navbar-nav .nav-link.active, header .navbar .navbar-nav .nav-lin
 .section-space p strong {
   color: var(--bs-white);
   font-weight: 600;
+}
+.section-space:nth-of-type(even) {
+  border-top: solid 2px rgba(var(--bs-primary-rgb), 0.5);
+  border-bottom: solid 2px rgba(var(--bs-primary-rgb), 0.5);
 }
 
 footer {
@@ -19347,6 +19349,9 @@ ol li ol li ol li::before {
   }
 }
 @media only screen and (max-width: 576px) {
+  .card img.card-img-top {
+    margin: 0 !important;
+  }
   .card.project-card {
     max-width: 182px;
   }
