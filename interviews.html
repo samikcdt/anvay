@@ -41,7 +41,7 @@
                   <a class="nav-link" aria-current="page" href="/anvay/">Home</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="/anvay/about.html">About Me</a>
+                  <a class="nav-link" href="/anvay/about.html">Resume</a>
                 </li>
                 <li class="nav-item">
                   <a class="nav-link" href="/anvay/ocw.html">OCW</a>
@@ -62,7 +62,7 @@
                   <a class="nav-link" href="/anvay/holy-paws.html">Holy Paws</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link active" href="/anvay/interviews.html">Interview</a>
+                  <a class="nav-link active" href="/anvay/interviews.html">Agricultural Interviews</a>
                 </li>
               </ul>
             </div>
@@ -91,7 +91,7 @@
                 <h6 class="card-subtitle mb-2 text-body-secondary">Sungod Agfarm</h6>
                 <h5 class="card-title" style="--bs-card-title-color:var(--bs-primary);">Agricultural business leaders</h5>
                 <p class="card-text"><small class="text-body-secondary">Mr. Rohit Satyanarayan Agrawal (Designated Partner)</small></p>
-                <a href="/anvay/images/sun-god.pdf" class="btn btn-primary btn-sm" target="_blank">View Interview</a>
+                <button type="button" data-url="/anvay/images/sun-god.pdf" class="viewPdf btn btn-primary btn-sm">View Interview</button>
               </div>
             </div>
           </div>
@@ -104,7 +104,7 @@
                 <h6 class="card-subtitle mb-2 text-body-secondary">Ankur Seeds</h6>
                 <h5 class="card-title" style="--bs-card-title-color:var(--bs-primary);">Agricultural business leaders</h5>
                 <p class="card-text"><small class="text-body-secondary">Dr Pratiksha Mayee - Deputy General Manager (Research), Ankur Seeds Pvt Ltd. Nagpur</small></p>
-                <a href="/anvay/images/ankur-seeds.pdf" class="btn btn-primary btn-sm" target="_blank">View Interview</a>
+                <button type="button" data-url="/anvay/images/ankur-seeds.pdf" class="viewPdf btn btn-primary btn-sm">View Interview</button>
               </div>
             </div>
           </div>
@@ -116,7 +116,7 @@
                 <h6 class="card-subtitle mb-2 text-body-secondary">International Flori Farm</h6>
                 <h5 class="card-title" style="--bs-card-title-color:var(--bs-primary);">Agricultural business leaders</h5>
                 <p class="card-text"><small class="text-body-secondary">Mr. Ashok Agrawal - CEO, International Flori Farm, Mohali Road, Mansar, Nagpur</small></p>
-                <a href="/anvay/images/international-flori-farm.pdf" class="btn btn-primary btn-sm" target="_blank">View Interview</a>
+                <button type="button" data-url="/anvay/images/international-flori-farm.pdf" class="viewPdf btn btn-primary btn-sm">View Interview</button>
               </div>
             </div>
           </div>
@@ -128,7 +128,7 @@
                 <h6 class="card-subtitle mb-2 text-body-secondary">Shah Nanji Nagsi Exports Pvt. Ltd.</h6>
                 <h5 class="card-title" style="--bs-card-title-color:var(--bs-primary);">Agricultural business leaders</h5>
                 <p class="card-text"><small class="text-body-secondary">Mr. Ashwin Shah - CEO, Shah Nanji Nagsi</small></p>
-                <a href="/anvay/images/shah-nanji-nagsi.pdf" class="btn btn-primary btn-sm" target="_blank">View Interview</a>
+                <button type="button" data-url="/anvay/images/shah-nanji-nagsi.pdf" class="viewPdf btn btn-primary btn-sm">View Interview</button>
               </div>
             </div>
           </div>
@@ -140,7 +140,8 @@
                 <h6 class="card-subtitle mb-2 text-body-secondary">Thakur Associates</h6>
                 <h5 class="card-title" style="--bs-card-title-color:var(--bs-primary);">Agricultural business leaders</h5>
                 <p class="card-text"><small class="text-body-secondary">Mr. Mahesh Thakur - Thakur Associates</small></p>
-                <a href="/anvay/images/thakur-associates.pdf" class="btn btn-primary btn-sm" target="_blank">View Interview</a>
+                <button type="button" data-url="/anvay/images/thakur-associates.pdf" class="viewPdf btn btn-primary btn-sm">View Interview</button>
+
               </div>
             </div>
           </div>
@@ -180,9 +181,47 @@
     </footer>
     <!-- End -->
 
+
+    <!-- Bootstrap Modal For PDF Viewer-->
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-xl modal-dialog-scrollable">
+        <div class="modal-content">
+          <div class="modal-body" id="modalBody">
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- End -->
+
     <!-- Scripts -->
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
     <script src="/anvay/js/main.js"></script>
+
+    <script>
+      $( document ).ready( function ()
+      {
+        $( '.viewPdf' ).on( 'click', function ()
+        {
+          let url = $( this ).data( 'url' );
+          console.log( url );
+
+          let elementToBeAdded = `<object data="${ url }" type="application/pdf" width="100%" style="height: calc(100svh - 100px)">
+            <p>Unable to display PDF file. <a href="${ url }">Download</a> instead. </p>
+            </object>`;
+
+          $( '#exampleModal' ).modal( 'show' );
+          $( '#modalBody' ).append( elementToBeAdded )
+        } );
+
+        $( '#exampleModal' ).on( 'hidden.bs.modal', function ( e )
+        {
+          $( '#modalBody' ).html( '' )
+        } );
+
+      } );
+    </script>
+
     <!-- End -->
   </body>
 

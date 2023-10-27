@@ -111,6 +111,11 @@ $cyan: #0dcaf0 !default;
 // }
 
 
+
+object {
+    background-color: #ffffff;
+}
+
 header {
     background-color: var(--bs-primary);
     min-height: 20px;
@@ -513,6 +518,7 @@ ol {
                 }
             }
         }
+
     }
 }
 
