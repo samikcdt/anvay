@@ -173,6 +173,10 @@ header {
     }
 }
 
+.bannerIntro {
+    width: 950px;
+}
+
 .banner-section {
     background-color: rgba(var(--bs-primary-rgb), 0.15);
     box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.27);
@@ -472,6 +476,14 @@ ol {
 }
 
 
+
+@media only screen and (min-width: 1199px)and (max-width: 1400px) {
+    header .navbar .navbar-nav .nav-link {
+        font-size: 14px;
+    }
+
+}
+
 @media only screen and (min-width: 1199px) {
     .navbar {
         .navbar-collapse {
@@ -504,6 +516,11 @@ ol {
 }
 
 @media only screen and (max-width: 991px) {
+
+    .bannerIntro {
+        width: auto;
+    }
+
     .navbar {
         .navbar-collapse {
             padding-block: 20px;
