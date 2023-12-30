@@ -64,6 +64,9 @@
                 <li class="nav-item">
                   <a class="nav-link active" href="/anvay/interviews.html">Agricultural Interviews</a>
                 </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="/anvay/rural-microfinance.html">Rural Microfinance</a>
+                </li>
               </ul>
             </div>
           </div>
@@ -212,12 +215,12 @@
             </object>`;
 
           $( '#exampleModal' ).modal( 'show' );
-          $( '#modalBody' ).append( elementToBeAdded )
+          $( '#modalBody' ).append( elementToBeAdded );
         } );
 
         $( '#exampleModal' ).on( 'hidden.bs.modal', function ( e )
         {
-          $( '#modalBody' ).html( '' )
+          $( '#modalBody' ).html( '' );
         } );
 
       } );

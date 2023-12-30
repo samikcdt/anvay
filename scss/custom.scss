@@ -151,16 +151,17 @@ header {
 
     .navbar {
         .navbar-collapse {
-            justify-content: start;
+            justify-content: center;
         }
 
         .navbar-nav {
-            --bs-navbar-nav-link-padding-x: 0.75rem;
+            --bs-navbar-nav-link-padding-x: 0.25rem;
             --bs-navbar-nav-link-padding-y: 0rem;
             --bs-nav-link-padding-y: 0rem;
             display: flex;
 
             .nav-link {
+                --bs-navbar-nav-link-padding-x: 0.25rem;
                 color: #ffffff;
                 border-bottom: solid 2px transparent;
 
@@ -476,6 +477,47 @@ ol {
 }
 
 
+#video-bg {
+    position: relative;
+    width: auto;
+    // min-width: 100%;
+    max-width: 100%;
+    margin: 0 auto;
+    height: auto;
+    background: transparent url(video-bg.jpg) no-repeat;
+    background-size: cover;
+
+    // .video-container {
+    //     width: 100%;
+    //     max-height: 600px;
+    //     overflow: hidden;
+    //     position: absolute;
+    //     top: 0;
+    //     right: 0;
+    //     z-index: -100;
+    // }
+}
+
+video {
+    display: block;
+}
+
+
+
+@media (min-width: 1200px) {
+    .navbar-expand-xl {
+        .navbar-nav {
+            .nav-item {
+                padding-right: var(--bs-navbar-nav-link-padding-x);
+                padding-left: var(--bs-navbar-nav-link-padding-x);
+
+                .nav-link {
+                    display: block;
+                }
+            }
+        }
+    }
+}
 
 @media only screen and (min-width: 1199px)and (max-width: 1400px) {
     header .navbar .navbar-nav .nav-link {
